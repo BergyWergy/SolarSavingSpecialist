@@ -50,6 +50,21 @@
   .nav .btn{padding:11px 20px;font-size:0.95rem;}
   @media(max-width:1020px){.nav-links{display:none;}}
   @media(max-width:560px){.nav-cta .tel{display:none;}}
+  .nav .btn .short{display:none;}
+  @media(max-width:560px){
+    .nav{height:64px;gap:10px;}
+    .brand{font-size:clamp(0.95rem,4.3vw,1.1rem);gap:8px;letter-spacing:-0.025em;}
+    .brand svg{width:30px;height:30px;}
+    .nav .btn{padding:9px 14px;font-size:0.86rem;white-space:nowrap;}
+    .nav .btn .full{display:none;}
+    .nav .btn .short{display:inline;}
+  }
+  @media(max-width:360px){
+    header.site .wrap{padding:0 12px;}
+    .brand{gap:6px;}
+    .brand svg{width:26px;height:26px;}
+    .nav .btn{padding:8px 11px;font-size:0.82rem;}
+  }
 
   /* hero */
   .hero{position:relative;overflow:hidden;background:var(--leaf-pale);padding:64px 0 76px;}
@@ -307,7 +322,7 @@
     </nav>
     <div class="nav-cta">
       <a class="tel" href="tel:08001313014">0800 1313 014</a>
-      <a href="get-quote.html" class="btn btn-sun">Get a free quote</a>
+      <a href="get-quote.html" class="btn btn-sun"><span class="full">Get a free quote</span><span class="short">Free quote</span></a>
     </div>
   </div>
 </header>
